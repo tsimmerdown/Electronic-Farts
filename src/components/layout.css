@@ -1,0 +1,4 @@
+@font-face {
+  font-family: "EA Logo";
+  src: local("EA Logo"), url(../assets/fonts/EA\ Logo.ttf) format("truetype");
+}
