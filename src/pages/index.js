@@ -5,8 +5,6 @@ import Seo from "../components/SEO"
 import { StaticImage } from "gatsby-plugin-image"
 import GameGrid from "../components/GameGrid/GameGrid"
 
-const Content = styled.div``
-
 const Text = styled.div`
   font-size: 45px;
   font-weight: 600;
@@ -16,7 +14,6 @@ const Text = styled.div`
 const IndexPage = () => (
   <Layout>
     <Seo title="Home" />
-
     <StaticImage
       src="../assets/images/football.jpg"
       quality={95}
@@ -28,10 +25,10 @@ const IndexPage = () => (
         height: "100%",
       }}
     />
-    <Content>
+    <div>
       <Text>Latest Games</Text>
       <GameGrid />
-    </Content>
+    </div>
   </Layout>
 )
 

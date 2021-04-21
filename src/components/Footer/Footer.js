@@ -85,7 +85,7 @@ const Footer = () => {
             />
           )}
 
-          <FooterLinks>
+          <FooterLinks data-testid="footer-links">
             <FooterLink>Game Library</FooterLink>
             <FooterLink>Subscribe</FooterLink>
             <FooterLink>Origin</FooterLink>
@@ -93,7 +93,7 @@ const Footer = () => {
             <FooterLink>Accessibility</FooterLink>
             <FooterLink>Help</FooterLink>
           </FooterLinks>
-          <Legal>
+          <Legal data-testid="legal">
             <LegalLinks>Legal</LegalLinks>
             <LegalLinks>User Agreement</LegalLinks>
             <LegalLinks>

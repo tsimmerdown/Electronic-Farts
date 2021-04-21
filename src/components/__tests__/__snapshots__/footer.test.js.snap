@@ -1,0 +1,109 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer Component matches snapshot 1`] = `
+<div
+  className="sc-bdvvaa iBtduy"
+>
+  <section
+    style={
+      Object {
+        "display": "flex",
+        "justifyContent": "center",
+      }
+    }
+  >
+    <div>
+      <div
+        className="sc-gsDJrp jSmWWO"
+        data-testid="footer-links"
+      >
+        <div
+          className="sc-dkPtyc hDSKQw"
+        >
+          Game Library
+        </div>
+        <div
+          className="sc-dkPtyc hDSKQw"
+        >
+          Subscribe
+        </div>
+        <div
+          className="sc-dkPtyc hDSKQw"
+        >
+          Origin
+        </div>
+        <div
+          className="sc-dkPtyc hDSKQw"
+        >
+          About
+        </div>
+        <div
+          className="sc-dkPtyc hDSKQw"
+        >
+          Accessibility
+        </div>
+        <div
+          className="sc-dkPtyc hDSKQw"
+        >
+          Help
+        </div>
+      </div>
+      <div
+        className="sc-hKwCoD kZwrfv"
+        data-testid="legal"
+      >
+        <div
+          className="sc-eCImvq kKrdKA"
+        >
+          Legal
+        </div>
+        <div
+          className="sc-eCImvq kKrdKA"
+        >
+          User Agreement
+        </div>
+        <div
+          className="sc-eCImvq kKrdKA"
+        >
+          Privacy & Cookie Policy (Your Privacy Rights)
+        </div>
+        <div
+          className="sc-eCImvq kKrdKA"
+        >
+          Online Service Updates
+        </div>
+        <div
+          className="sc-eCImvq kKrdKA"
+        >
+          Security
+        </div>
+        <div
+          className="sc-eCImvq kKrdKA"
+        >
+          YouTube Terms of Service
+        </div>
+        <div
+          className="sc-eCImvq kKrdKA"
+        >
+          Google Privacy Policy
+        </div>
+      </div>
+      <p
+        style={
+          Object {
+            "margin": "20px 0 0 32px",
+          }
+        }
+      >
+        <span
+          aria-label="jsx-a11y/accessible-emoji"
+          role="img"
+        >
+          ©️
+        </span>
+        2021 Electronic Farts Inc.
+      </p>
+    </div>
+  </section>
+</div>
+`;

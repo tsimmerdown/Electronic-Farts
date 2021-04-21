@@ -84,7 +84,9 @@ const Nav2 = () => {
           scale: 1.1,
         }}
       />
-      <Title to="/">Electronic Farts</Title>
+      <Title to="/" data-testid="title">
+        Electronic Farts
+      </Title>
       {!isBigScreen ? (
         <>
           <BurgerCont>
@@ -92,12 +94,20 @@ const Nav2 = () => {
           </BurgerCont>
           <DrawerCont anchor="top" open={openDrawer}>
             <Header>
-              <Title to="/">Electronic Arts</Title>
+              <Title to="/" data-testid="title">
+                Electronic Farts
+              </Title>
               <Close onClick={handleDrawerOpen} />
             </Header>
             <div style={{ padding: "21px 0 56px 0" }}>
               {NavbarData.map((item, key) => {
-                return <NavButton title={item.title} key={key} />
+                return (
+                  <NavButton
+                    data-testid="button"
+                    title={item.title}
+                    key={key}
+                  />
+                )
               })}
             </div>
           </DrawerCont>

@@ -40,7 +40,9 @@ const NavButton = ({ title, list }) => {
     <>
       {list ? (
         <Cont onMouseEnter={handleClick} onMouseLeave={handleClose}>
-          <Text style={{ fontSize: "18px" }}>{title}</Text>
+          <Text data-testid="text" style={{ fontSize: "18px" }}>
+            {title}
+          </Text>
           <Popover
             style={{ pointerEvents: "none" }}
             open={open}
@@ -70,6 +72,7 @@ const NavButton = ({ title, list }) => {
           <Divider style={{ margin: "0 24px" }} />
           <Text
             style={{ fontSize: "18px", padding: "18px 0", margin: "0 24px" }}
+            data-testid="text"
           >
             {title}
           </Text>
