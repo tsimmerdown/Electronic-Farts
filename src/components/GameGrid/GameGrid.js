@@ -40,7 +40,7 @@ const GameGrid = () => {
 
   return (
     <Cont>
-      <Grid>
+      <Grid data-testid="grid">
         {games.map(data => {
           return (
             <GameContainer
@@ -56,6 +56,7 @@ const GameGrid = () => {
         whileHover={{
           scale: 1.02,
         }}
+        data-testid="button"
       >
         View All Games
       </Button>

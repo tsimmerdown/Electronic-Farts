@@ -8739,4 +8739,13 @@ describe("Game Grid test", () => {
     const gameData = await getGames()
     expect(gameData).toEqual(testData)
   })
+
+  it("renders Grid without crashing", () => {
+    const { getByTestId } = render(<GameGrid />)
+    expect(getByTestId("button")).toHaveTextContent("View All Games")
+  })
+  it("renders correctly", () => {
+    const { getByTestId } = render(<GameGrid />)
+    expect(getByTestId("grid")).toHaveReturned()
+  })
 })
