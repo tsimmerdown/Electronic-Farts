@@ -35,7 +35,10 @@ const GameGrid = () => {
   const [games, setGames] = useState([])
 
   useEffect(() => {
-    getGames(setGames)
+    const retrieveGames = async () => {
+      await getGames().then(data => setGames(data))
+    }
+    retrieveGames()
   }, [])
 
   return (

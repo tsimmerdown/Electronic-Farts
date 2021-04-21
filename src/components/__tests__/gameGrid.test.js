@@ -8736,7 +8736,7 @@ describe("Game Grid test", () => {
       ],
     })
 
-    const gameData = await getGames()
+    const gameData = await getGames().then(data => data.JSON)
     expect(gameData).toEqual(testData)
   })
 
