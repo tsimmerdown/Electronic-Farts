@@ -3,6 +3,7 @@ import styled from "styled-components"
 import { Divider } from "@material-ui/core"
 import { motion } from "framer-motion"
 import { responsive } from "../../data/responsive"
+import { StaticImage } from "gatsby-plugin-image"
 
 const Cont = styled.div`
   display: flex;
@@ -78,10 +79,23 @@ const GameContainer = ({ name, website, imageID }) => {
   }
   return (
     <Cont onMouseEnter={hoverHandler} onMouseLeave={hoverHandler}>
-      {imageID && (
+      {imageID ? (
         <Image
           src={`https://images.igdb.com/igdb/image/upload/t_1080p/${imageID}.jpg`}
           alt={name}
+        />
+      ) : (
+        <StaticImage
+          src="../../assets/images/noImage.jpg"
+          quality={95}
+          formats={["AUTO", "WEBP", "AVIF"]}
+          alt="No Image"
+          placeholder="blurred"
+          // style={{ width: "100%", height: "55vh" }}
+          imgStyle={{
+            width: "100%",
+            height: "100%",
+          }}
         />
       )}
 
