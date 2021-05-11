@@ -60,6 +60,9 @@ const GameGrid = () => {
           scale: 1.02,
         }}
         data-testid="button"
+        onClick={() => {
+          console.log(process.env.DB_CLIENT_ID)
+        }}
       >
         View All Games
       </Button>
