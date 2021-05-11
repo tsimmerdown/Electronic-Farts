@@ -1,7 +1,7 @@
 import * as React from "react"
 import styled from "styled-components"
 import Layout from "../components/layout"
-import Seo from "../components/SEO.js"
+// import Seo from "../components/SEO.js"
 import { StaticImage } from "gatsby-plugin-image"
 import GameGrid from "../components/GameGrid/GameGrid"
 
@@ -13,7 +13,7 @@ const Text = styled.div`
 `
 const IndexPage = () => (
   <Layout>
-    <Seo title="Home" />
+    {/* <Seo title="Home" /> */}
     <StaticImage
       src="../assets/images/footballs.jpg"
       quality={95}
