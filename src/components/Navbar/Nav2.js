@@ -93,9 +93,9 @@ const Nav2 = () => {
       </Title>
       {!isBigScreen ? (
         <>
-          {/* <BurgerCont isBigScreen={isBigScreen}>
+          <BurgerCont isBigScreen={isBigScreen}>
             <BurgerIcon onClick={handleDrawerOpen} />
-          </BurgerCont> */}
+          </BurgerCont>
           <DrawerCont anchor="top" open={openDrawer}>
             <Header>
               <Title to="/" data-testid="title">
