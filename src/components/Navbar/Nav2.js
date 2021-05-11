@@ -38,7 +38,6 @@ const BurgerCont = styled.div`
   position: absolute;
   right: 0;
   transform: translate(-100%, 0);
-  display: ${props => (props.isBigScreen ? "block" : "none")};
 `
 
 const BurgerIcon = styled(GiHamburgerMenu)`
@@ -90,7 +89,7 @@ const Nav2 = () => {
       </Title>
       {!isBigScreen ? (
         <>
-          <BurgerCont isBigScreen={isBigScreen}>
+          <BurgerCont>
             <BurgerIcon onClick={handleDrawerOpen} />
           </BurgerCont>
           <DrawerCont anchor="top" open={openDrawer}>
