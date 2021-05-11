@@ -15,10 +15,11 @@ const IndexPage = () => (
   <Layout>
     <Seo title="Home" />
     <StaticImage
-      src="../assets/images/football.jpg"
+      src="../assets/images/footballs.jpg"
       quality={95}
-      formats={["AUTO", "WEBP", "AVIF"]}
+      // formats={["AUTO", "WEBP", "AVIF"]}
       alt="Football"
+      placeholder="blurred"
       style={{ width: "100%", height: "55vh" }}
       imgStyle={{
         width: "100%",
