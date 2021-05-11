@@ -69,7 +69,7 @@ const Close = styled(GrClose)`
 const Nav2 = () => {
   const [openDrawer, setOpenDrawer] = useState(false)
   const isBigScreen = useMediaQuery({
-    query: `(min-width: ${responsive.tablet}px)`,
+    query: `(min-device-width: ${responsive.tablet}px)`,
   })
 
   const handleDrawerOpen = () => {
