@@ -38,6 +38,7 @@ const BurgerCont = styled.div`
   position: absolute;
   right: 0;
   transform: translate(-100%, 0);
+  display: ${props => (props.isBigScreen ? "none" : "block")};
 `
 
 const BurgerIcon = styled(GiHamburgerMenu)`
@@ -83,13 +84,16 @@ const Nav2 = () => {
         whileHover={{
           scale: 1.1,
         }}
+        onClick={() => {
+          console.log(isBigScreen)
+        }}
       />
       <Title to="/" data-testid="title">
         Electronic Farts
       </Title>
       {!isBigScreen ? (
         <>
-          <BurgerCont>
+          <BurgerCont isBigScreen={isBigScreen}>
             <BurgerIcon onClick={handleDrawerOpen} />
           </BurgerCont>
           <DrawerCont anchor="top" open={openDrawer}>

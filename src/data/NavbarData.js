@@ -1,5 +1,4 @@
 export const NavbarData = [
-  {},
   {
     title: "Games",
     sub: [
