@@ -85,7 +85,7 @@ const Nav2 = () => {
           scale: 1.1,
         }}
         onClick={() => {
-          console.log(isBigScreen)
+          console.log(NavbarData)
         }}
       />
       <Title to="/" data-testid="title">
@@ -93,9 +93,9 @@ const Nav2 = () => {
       </Title>
       {!isBigScreen ? (
         <>
-          <BurgerCont isBigScreen={isBigScreen}>
+          {/* <BurgerCont isBigScreen={isBigScreen}>
             <BurgerIcon onClick={handleDrawerOpen} />
-          </BurgerCont>
+          </BurgerCont> */}
           <DrawerCont anchor="top" open={openDrawer}>
             <Header>
               <Title to="/" data-testid="title">
