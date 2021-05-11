@@ -91,7 +91,6 @@ const GameContainer = ({ name, website, imageID }) => {
           formats={["AUTO", "WEBP", "AVIF"]}
           alt="No Image"
           placeholder="blurred"
-          // style={{ width: "100%", height: "55vh" }}
           imgStyle={{
             width: "100%",
             height: "100%",

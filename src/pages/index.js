@@ -1,7 +1,7 @@
 import * as React from "react"
 import styled from "styled-components"
 import Layout from "../components/layout"
-import Seo from "../components/SEO"
+import Seo from "../components/SEO.js"
 import { StaticImage } from "gatsby-plugin-image"
 import GameGrid from "../components/GameGrid/GameGrid"
 
