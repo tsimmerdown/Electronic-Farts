@@ -17,7 +17,6 @@ const IndexPage = () => (
     <StaticImage
       src="../assets/images/footballs.jpg"
       quality={95}
-      // formats={["AUTO", "WEBP", "AVIF"]}
       alt="Football"
       placeholder="blurred"
       style={{ width: "100%", height: "55vh" }}
