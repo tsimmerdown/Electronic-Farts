@@ -94,9 +94,6 @@ const Nav2 = () => {
         whileHover={{
           scale: 1.1,
         }}
-        onClick={() => {
-          console.log(NavbarData)
-        }}
       />
       <Title to="/" data-testid="title">
         Electronic Farts
