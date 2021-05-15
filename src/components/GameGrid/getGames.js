@@ -9,8 +9,8 @@ export const getGames = async () => {
     data: `fields *, game.*, game.cover.*; sort date desc; where game.involved_companies.company = 1 & human != "TBD"; limit 100;`,
     headers: {
       Accept: "application/json",
-      "Client-ID": process.env.DB_CLIENT_ID,
-      Authorization: process.env.DB_AUTH,
+      "Client-ID": process.env.GATSBY_DB_CLIENT_ID,
+      Authorization: process.env.GATSBY_DB_AUTH,
     },
   })
 
