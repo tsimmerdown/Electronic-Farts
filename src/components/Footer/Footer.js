@@ -1,7 +1,6 @@
 import React from "react"
 import styled from "styled-components"
 import { StaticImage } from "gatsby-plugin-image"
-import { useMediaQuery } from "react-responsive"
 import { responsive } from "../../data/responsive"
 
 const Cont = styled.div`
