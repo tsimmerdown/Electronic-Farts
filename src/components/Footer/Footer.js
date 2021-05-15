@@ -47,12 +47,19 @@ const Legal = styled.div`
 const LegalLinks = styled.div`
   padding: 1px 32px 3px 0px;
 `
+const Mobile = styled.div`
+  @media only screen and (min-width: ${responsive.tablet}px) {
+    display: none;
+  }
+`
+
+const Desktop = styled.div`
+  @media only screen and (max-width: ${responsive.tablet}px) {
+    display: none;
+  }
+`
 
 const Footer = () => {
-  const mini = useMediaQuery({
-    query: `(min-width: ${responsive.smallScreen}px)`,
-  })
-
   return (
     <Cont>
       <section
@@ -61,20 +68,18 @@ const Footer = () => {
           justifyContent: "center",
         }}
       >
-        {mini && (
-          <div style={{ minWidth: "55px" }}>
-            <StaticImage
-              src="../../assets/images/Logo.png"
-              width={70}
-              quality={95}
-              formats={["AUTO", "WEBP", "AVIF"]}
-              alt="EA Logo"
-              style={{ marginBottom: `1.45rem` }}
-            />
-          </div>
-        )}
+        <Desktop style={{ minWidth: "55px" }}>
+          <StaticImage
+            src="../../assets/images/Logo.png"
+            width={70}
+            quality={95}
+            formats={["AUTO", "WEBP", "AVIF"]}
+            alt="EA Logo"
+            style={{ marginBottom: `1.45rem` }}
+          />
+        </Desktop>
         <div>
-          {!mini && (
+          <Mobile>
             <StaticImage
               src="../../assets/images/Logo.png"
               width={60}
@@ -83,7 +88,7 @@ const Footer = () => {
               alt="EA Logo"
               style={{ marginBottom: `1.45rem`, marginLeft: "20px" }}
             />
-          )}
+          </Mobile>
 
           <FooterLinks data-testid="footer-links">
             <FooterLink>Game Library</FooterLink>
