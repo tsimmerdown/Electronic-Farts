@@ -3,7 +3,7 @@ import styled from "styled-components"
 import Layout from "../components/layout"
 import { StaticImage } from "gatsby-plugin-image"
 import GameGrid from "../components/GameGrid/GameGrid"
-import Seo from "../components/SEO"
+import SEO from "../components/SEO"
 
 const Text = styled.div`
   font-size: 45px;
@@ -13,7 +13,7 @@ const Text = styled.div`
 `
 const IndexPage = () => (
   <Layout>
-    <Seo />
+    <SEO />
     <StaticImage
       src="../assets/images/footballs.jpg"
       quality={95}
